@@ -116,7 +116,7 @@ const Form = () => {
               placeholder={`${user?.name ? user?.name : "Enter your name"}`}
               value={name}
               onChange={handleNameChange}
-              className={` cursor-pointer px-3 py-1 w-[95%] mb-4 800px:mb-0 320px:h-[40px] h-[50px] border-black border-[1px] focus:outline-none focus:ring-lime-400 focus:border-lime-500 320px:text-[20px] text-[22px] md:text-[22px] font-normal rounded-md`}
+              className={` cursor-pointer px-3 py-1 w-[95%] mb-4 800px:mb-0 320px:h-[40px] h-[50px] border-black border-[1px] focus:outline-none focus:ring-lime-400 focus:border-lime-500 320px:text-[20px] md:text-[18px] font-normal rounded-md`}
             />
             {formErrors.name && (
               <p className="text-red-500">{formErrors.name}</p>
@@ -130,7 +130,7 @@ const Form = () => {
               </label>
             </div>
             <select
-              className="cursor-pointer px-3 py-1 w-[95%] mb-4 800px:mb-0 320px:h-[40px] h-[50px] border-black border-[1px] focus:outline-none focus:ring-lime-400 focus:border-lime-500 320px:text-[20px] text-[22px] md:text-[22px] font-normal rounded-md"
+              className="cursor-pointer px-3 py-1 w-[95%] mb-4 800px:mb-0 320px:h-[40px] h-[50px] border-black border-[1px] focus:outline-none focus:ring-lime-400 focus:border-lime-500 320px:text-[20px] md:text-[18px] font-normal rounded-md"
               value={category}
               onChange={handleCategoryChange}
             >
@@ -162,7 +162,7 @@ const Form = () => {
               </label>
             </div>
             <select
-              className="cursor-pointer px-3 py-1 w-[95%] mb-4 800px:mb-0 320px:h-[40px] h-[50px] border-black border-[1px] focus:outline-none focus:ring-lime-400 focus:border-lime-500 320px:text-[20px] text-[22px] md:text-[22px] font-normal rounded-md"
+              className="cursor-pointer px-3 py-1 w-[95%] mb-4 800px:mb-0 320px:h-[40px] h-[50px] border-black border-[1px] focus:outline-none focus:ring-lime-400 focus:border-lime-500 320px:text-[20px] md:text-[18px] font-normal rounded-md"
               value={sector}
               onChange={handleSectorChange}
               disabled={category === "Choose a Category"}

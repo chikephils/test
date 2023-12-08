@@ -28,8 +28,6 @@ app.use("/api/v2/sectors", sector);
 
 app.use(ErrorHandler);
 
-app.use("/", (req, res) => {
-  res.send("Hello world!");
-});
+
 
 module.exports = app;

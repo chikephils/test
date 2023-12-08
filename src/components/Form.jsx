@@ -23,7 +23,7 @@ const Form = () => {
   console.log(user);
 
   const filteredSectors =
-    allSectors.find((data) => data.category === category)?.sectors || [];
+    allSectors?.find((data) => data.category === category)?.sectors || [];
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -140,7 +140,7 @@ const Form = () => {
               >
                 Choose a Category
               </option>
-              {allSectors.map((data) => (
+              {allSectors?.map((data) => (
                 <option
                   className="text-[12px] md:text-sm font-medium"
                   key={data._id}
